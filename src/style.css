@@ -1,0 +1,37 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+    font-family: -apple-system, Roboto-Bold;
+    list-style: none;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('./assets/fonts/Roboto-Regular.ttf');
+}
+@font-face {
+    font-family: 'Roboto-Medium';
+    src: url('./assets/fonts/Roboto-Medium.ttf');
+}
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('./assets/fonts/Roboto-Bold.ttf');
+}
+@font-face {
+    font-family: 'Roboto-Italic';
+    src: url('./assets/fonts/Roboto-Italic.ttf');
+}
+body {
+    background-color: black;
+    padding: 24px;
+}
+h2 {
+    font-family: 'Roboto-Medium';
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26px;
+}

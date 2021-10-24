@@ -1,0 +1,29 @@
+.card {
+    border-radius: 8px;
+    box-shadow: rgba(149, 157, 165, 0.5) 0px 8px 24px;
+    margin-bottom: 22.5px;
+}
+.cardTitle {
+    overflow: hidden;
+    max-height: 160px;
+}
+.imgContainer {
+    background-color: rgb(255, 216, 0);
+    border-radius: 8px 8px 0 0;
+    height: 250px;
+    width: 400px;
+}
+.infoContainer {
+    background-color: steelblue;
+    border-radius: 0 0 8px 8px;
+    height: 250px;
+    padding: 12px;
+    position: relative;
+    width: 400px;
+}
+.timestamp {
+    bottom: 12px;
+    color: rgba(0, 0, 0, 0.4);
+    font-family: 'Roboto-Regular';
+    position: absolute;
+}

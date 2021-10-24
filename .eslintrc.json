@@ -1,18 +1,25 @@
 {
-    "env": {
-        "browser":true,
-        "commonjs": true,
-        "es6": true,
-        "node": true
+  "env": {
+      "browser":true,
+      "commonjs": true,
+      "es6": true,
+      "node": true
+  },
+  "settings": {
+      "import/resolver": {
+        "webpack": {
+          "config": "webpack.config.js"
+        }
+      }
     },
-    "parserOptions": {
-        "sourceType": "module",
-        "allowImportExportEverywhere": true
-    },
-    "extends": ["airbnb", "prettier"],
-    "plugins": ["prettier"],
-    "rules": {
-        "prettier/prettier": ["error", {"singleQuote": true, "tabWidth": 4, "useTabs": false, "jsxSingleQuote": true}],
-        "no-unused-vars": "warn"
-    }
+  "parserOptions": {
+      "sourceType": "module",
+      "allowImportExportEverywhere": true
+  },
+  "extends": ["airbnb", "prettier"],
+  "plugins": ["prettier"],
+  "rules": {
+      "prettier/prettier": ["error", {"singleQuote": true, "tabWidth": 4, "useTabs": false, "jsxSingleQuote": true}],
+      "no-unused-vars": "warn"
+  }
 }
