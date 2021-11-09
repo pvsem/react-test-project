@@ -3,6 +3,8 @@ import SearchBar from './search-bar/search-bar';
 import Button from './button/button';
 import './app.css';
 import CardContainer from './card-container/card-container';
+import Date from './date/date';
+import Checkbox from './checkbox/checkbox';
 
 function App() {
     return (
@@ -11,6 +13,8 @@ function App() {
                 <SearchBar />
                 <Button />
             </div>
+            <Date />
+            <Checkbox />
             <CardContainer />
         </main>
     );

@@ -13,6 +13,7 @@ function Card() {
                     предпринять «дополнительные меры» uhuCIhuhuhuihh
                     uhuihuhuihiuhuih huiuhihuih
                 </h2>
+                <span className='source'>lenta.ru</span>
                 <span className='timestamp'>4 hours ago</span>
             </div>
         </article>

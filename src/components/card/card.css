@@ -14,16 +14,24 @@
     width: 400px;
 }
 .infoContainer {
-    background-color: steelblue;
+    background-color: white;
     border-radius: 0 0 8px 8px;
     height: 250px;
     padding: 12px;
     position: relative;
     width: 400px;
 }
+.source {
+    bottom: 12px;
+    right: 12px;
+    color: rgba(0, 0, 0, 0.4);
+    font-family: 'Roboto-Regular';
+    position: absolute;
+}
 .timestamp {
     bottom: 12px;
     color: rgba(0, 0, 0, 0.4);
     font-family: 'Roboto-Regular';
+    left: 12px;
     position: absolute;
 }
