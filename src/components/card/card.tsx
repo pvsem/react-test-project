@@ -12,7 +12,9 @@ function Card({ data }: any) {
             <div className='infoContainer'>
                 <h2 className='cardTitle'>{data.title}</h2>
                 <span className='source'>{data.source.name}</span>
-                <span className='timestamp'>{data.publishedAt.slice(0, -1).replace(/T/g, ' ')}</span>
+                <span className='timestamp'>
+                    {data.publishedAt.slice(0, -1).replace(/T/g, ' ')}
+                </span>
             </div>
         </article>
     );

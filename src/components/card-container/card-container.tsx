@@ -5,26 +5,20 @@ import getAllNews from '../../api/news';
 
 function CardContainer() {
     const [news, setNewsState] = useState<any[]>([]);
+    // const [page, setPageState] = useState<any[]>([]);
     useEffect(() => {
-        (async function () {
-            const news = await getAllNews(1);
-            setNewsState(news);
-        }());
+        getAllNews(1).then((newsPage) => setNewsState(newsPage));
     }, []);
     function displayCards(articles: Array<any>) {
         return articles.map((item, i) => {
             if (item.title) {
-                return <Card data={item} key={i} />
+                return <Card data={item} key={i} />;
             }
             return null;
         });
     }
     console.log(news, 'wawe');
-    return (
-        <section className='cardWrapper'>
-            {displayCards(news)}
-        </section>
-    );
+    return <section className='cardWrapper'>{displayCards(news)}</section>;
 }
 
 export default CardContainer;

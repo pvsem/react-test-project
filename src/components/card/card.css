@@ -8,6 +8,7 @@
     max-height: 160px;
 }
 .imgContainer {
+    background: no-repeat #000;
     background-position: center;
     background-size: contain;
     border-radius: 8px 8px 0 0;
