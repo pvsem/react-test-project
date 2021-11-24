@@ -1,0 +1,12 @@
+.dateInput {
+    border: 1px solid black;
+    border-radius: 4px;
+    cursor: text;
+    font-family: 'Roboto-Regular';
+    font-weight: 400;
+    padding: 4px;
+}
+
+.dateInput::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+}
