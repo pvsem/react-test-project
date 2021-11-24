@@ -34,3 +34,10 @@ h2 {
     font-weight: 500;
     line-height: 26px;
 }
+
+@media screen and (max-width: 480px) {
+    body {
+        flex-direction: column;
+        padding: 0;
+    }
+}

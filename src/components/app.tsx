@@ -13,8 +13,6 @@ function App() {
                 <SearchBar />
                 <Button />
             </div>
-            <Date />
-            <Checkbox />
             <CardContainer />
         </main>
     );

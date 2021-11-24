@@ -23,12 +23,31 @@
     position: relative;
     width: 400px;
 }
+.url {
+    bottom: 35px;
+    color: rgba(0, 0, 0, 0.4);
+    display: block;
+    font-family: 'Roboto-Regular';
+    max-width: 380px;
+    overflow: hidden;
+    position: absolute;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.url:hover {
+    color: rgba(0, 0, 0, 0.6);
+}
 .source {
     bottom: 12px;
     right: 12px;
     color: rgba(0, 0, 0, 0.4);
     font-family: 'Roboto-Regular';
     position: absolute;
+    max-width: 200px;
+    max-height: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .timestamp {
     bottom: 12px;
@@ -36,4 +55,16 @@
     font-family: 'Roboto-Regular';
     left: 12px;
     position: absolute;
+}
+
+@media screen and (max-width: 480px) {
+    .infoContainer {
+        width: 350px;
+    }
+    .imgContainer {
+        width: 350px;
+    }
+    .url {
+        max-width: 340px;
+    }
 }
