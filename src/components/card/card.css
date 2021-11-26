@@ -4,8 +4,10 @@
     margin-bottom: 22.5px;
 }
 .cardTitle {
+    max-height: 80px;
     overflow: hidden;
-    max-height: 160px;
+    padding-bottom: 8px;
+    text-overflow: ellipsis;
 }
 .imgContainer {
     background: no-repeat #000;
@@ -16,6 +18,9 @@
     width: 400px;
 }
 .infoContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: white;
     border-radius: 0 0 8px 8px;
     height: 250px;
@@ -23,41 +28,55 @@
     position: relative;
     width: 400px;
 }
+.content {
+    display: inline-block;
+    height: 200px;
+}
+.description {
+    color: rgba(0, 0, 0, 0.8);
+    display: inline-block;
+    flex-grow: 0;
+    font-weight: 300;
+    max-height: 95px;
+    overflow: hidden;
+}
 .url {
-    bottom: 35px;
     color: rgba(0, 0, 0, 0.4);
     display: block;
-    font-family: 'Roboto-Regular';
+    font-size: 12px;
     max-width: 380px;
     overflow: hidden;
-    position: absolute;
+    padding-bottom: 4px;
     text-overflow: ellipsis;
+    text-decoration: underline;
     white-space: nowrap;
 }
 .url:hover {
     color: rgba(0, 0, 0, 0.6);
 }
+.meta {
+    display: flex;
+    justify-content: space-between;
+}
 .source {
-    bottom: 12px;
-    right: 12px;
     color: rgba(0, 0, 0, 0.4);
-    font-family: 'Roboto-Regular';
-    position: absolute;
-    max-width: 200px;
+    font-size: 12px;
     max-height: 20px;
-    white-space: nowrap;
+    max-width: 200px;
     overflow: hidden;
     text-overflow: ellipsis;
+    white-space: nowrap;
 }
 .timestamp {
-    bottom: 12px;
     color: rgba(0, 0, 0, 0.4);
-    font-family: 'Roboto-Regular';
-    left: 12px;
-    position: absolute;
+    font-size: 12px;
 }
 
 @media screen and (max-width: 480px) {
+    .card {
+        width: 350px;
+        margin: 22.5px auto;
+    }
     .infoContainer {
         width: 350px;
     }
