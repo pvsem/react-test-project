@@ -142,6 +142,12 @@
     }
 }
 
+.toplineWrapper {
+    border: 1px solid white;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -184,5 +190,9 @@ h2 {
         flex-direction: column;
         padding: 0;
     }
+}
+
+.infoAbout {
+    padding: 16px 45px;
 }
 

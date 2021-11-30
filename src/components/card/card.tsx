@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './card.css';
+import sourceRemove from '../../utils/sourceRemove';
 
 function Card({ data }: any) {
     const imgStyle = {
@@ -11,7 +12,7 @@ function Card({ data }: any) {
             <div className='imgContainer' style={imgStyle} />
             <div className='infoContainer'>
                 <div className='content'>
-                    <h2 className='cardTitle'>{data.title}</h2>
+                    <h2 className='cardTitle'>{sourceRemove(data.title)}</h2>
                     <span className='description'>{data.description}</span>
                 </div>
                 <div className='cardBottom'>

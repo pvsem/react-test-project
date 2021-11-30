@@ -1,12 +1,16 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+// const fs = require('fs');
+// const pizda = path.resolve(fs.realpathSync(process.cwd()), 'public/icons');
+// console.log(pizda, 'dwadawdjfajfaiowfjkwajkfioj')
 
 module.exports = {
     entry: './src/index.tsx',
     output: {
         path: path.join(__dirname, '/dist'),
         filename: 'index_bundle.js',
+        publicPath: '/'
     },
     module: {
         rules: [
@@ -28,6 +32,7 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             template: './src/index.html',
+            favicon: './src/assets/icons/favicon.png'
         }),
         new MiniCssExtractPlugin({}),
     ],

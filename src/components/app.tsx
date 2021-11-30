@@ -5,16 +5,20 @@ import './app.css';
 import CardContainer from './card-container/card-container';
 import Date from './date/date';
 import Checkbox from './checkbox/checkbox';
+import Topline from './topline/topline';
 
 function App() {
     return (
-        <main className='page'>
-            <div className='searchWrapper'>
-                <SearchBar />
-                <Button />
-            </div>
-            <CardContainer />
-        </main>
+        <React.Fragment>
+            <Topline />
+            <main className='page'>
+                <div className='searchWrapper'>
+                    <SearchBar />
+                    <Button />
+                </div>
+                <CardContainer />
+            </main>
+        </React.Fragment>
     );
 }
 
