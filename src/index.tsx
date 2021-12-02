@@ -4,7 +4,6 @@ import App from './components/app';
 import './style.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import About from './routes/about/about';
-import Topline from './components/topline/topline';
 
 ReactDOM.render(
     <BrowserRouter>

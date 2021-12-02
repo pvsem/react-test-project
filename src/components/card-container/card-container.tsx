@@ -7,7 +7,7 @@ function CardContainer() {
     const [news, setNewsState] = useState<any[]>([]);
     // const [page, setPageState] = useState<any[]>([]);
     useEffect(() => {
-        getAllNews(1).then((newsPage) => setNewsState(newsPage));
+        getAllNews().then((newsPage) => setNewsState(newsPage));
     }, []);
     function displayCards(articles: Array<any>) {
         return articles.map((item, i) => {

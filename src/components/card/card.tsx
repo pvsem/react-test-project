@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './card.css';
 import sourceRemove from '../../utils/sourceRemove';
 
@@ -6,7 +6,7 @@ function Card({ data }: any) {
     const imgStyle = {
         backgroundImage: 'url(' + data.urlToImage + ')',
     };
-    console.log(data, 'data in cards');
+    // console.log(data, 'data in cards');
     return (
         <article className='card'>
             <div className='imgContainer' style={imgStyle} />

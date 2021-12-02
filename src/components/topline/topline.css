@@ -1,5 +1,41 @@
 .toplineWrapper {
-    border: 1px solid white;
-    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    padding: 0 48px;
     margin-bottom: 10px;
+}
+.logoContainer {
+    height: 50px;
+    min-width: 100px;
+    background-image: url('/src/assets/images/logo.png');
+}
+.toplineLogo {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+.toplineNav {
+    display: flex;
+}
+.toplineItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    margin-right: 10px;
+}
+.toplineLink {
+    display: block;
+    padding: 15px 16px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px #fff;
+    color: white;
+}
+.toplineLink:hover {
+    color: rgb(172, 150, 30);
+    box-shadow: 0px 0px 10px #fff;
+}
+.toplineLink:active {
+    color: rgb(129, 113, 24);
 }
