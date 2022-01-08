@@ -5,7 +5,7 @@ import './style.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import About from './routes/about/about';
 import { Provider } from 'react-redux';
-import { store } from './store/store'
+import { store } from './store/store';
 
 ReactDOM.render(
     <Provider store={store}>

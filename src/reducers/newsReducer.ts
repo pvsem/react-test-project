@@ -5,6 +5,6 @@ const reducer = (state: any, action: any) => {
         default:
             return state;
     }
-}
+};
 
 export default reducer;
